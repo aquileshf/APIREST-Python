@@ -18,9 +18,9 @@ def getProduct(product_name):
 
 @app.route('/products/<int:product_price_menor>&<int:product_price_mayor>')
 def getProductByPrice(product_price_menor, product_price_mayor):
-    productsFounds = [product for product in products if product['price'] != "AGOTADO" if (int(product['price']) >= product_price_menor) and (int(product['price'] <= product_price_mayor))]
-    if(len(productsFounds) > 0):
-        return jsonify({"product": productsFounds})
+    productsFound = [product for product in products if product['price'] != "AGOTADO" if (int(product['price']) >= product_price_menor) and (int(product['price'] <= product_price_mayor))]
+    if(len(productsFound) > 0):
+        return jsonify({"product": productsFound})
     return jsonify({"message": "Products by prices not found"})
 
 @app.route('/products', methods=['POST'])
