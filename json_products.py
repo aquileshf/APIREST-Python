@@ -32,7 +32,7 @@ def parse_home():
             links_to_price_discount = parsed.xpath(XPATH_PRICE_DISCOUNT)
             array_prices_without_pagination = links_to_price + links_to_price_discount
 
-            # enlace para la siguiente pagina de la tienda
+            #link para la siguiente pagina de la tienda
             link_to_pagination = parsed.xpath(XPATH_LINK_TO_PAGINATION)
             response_pagination = requests.get(link_to_pagination[0])
             if response_pagination.status_code == 200:

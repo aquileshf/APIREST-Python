@@ -2,12 +2,12 @@ products = [
     {
         "name":"Serie_Instinct",
         "description":"Resistentes y fiables relojes con GPS para actividades al aire libre con funciones tácticas opcionales",
-        "price": 199990
+        "price":199990
     },
     {
         "name":"Descent_Mk2_Series",
         "description":"Computadoras de buceo estilo reloj con integración de aire opcional, navegación GPS de superficie, Pulse Ox, funciones multideporte y más.",
-        "price": 1299990
+        "price":1299990
     },
     {
         "name":"Vivofit_jr3",
